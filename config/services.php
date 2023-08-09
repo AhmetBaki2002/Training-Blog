@@ -1,5 +1,7 @@
 <?php
 
+use Illuminate\Support\Env;
+
 return [
 
     /*
@@ -33,6 +35,9 @@ return [
 
     'mailchimp' => [
         'key' => env('MAILCHIMP_KEY'),
+        'lists' => [
+            'subscribers' => Env('MAILCHIMP_LIST_SUBSCRIBERS')
+        ]
     ],
 
 ];

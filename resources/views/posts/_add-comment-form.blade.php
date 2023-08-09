@@ -12,13 +12,11 @@
 
         <div class="mt-6">
             <textarea name="body" class="w-full text-sm focus:outline-none focus:ring" rows="5" placeholder="Quick, think of somthing to say!" required></textarea>
-            @error('body')
-            <span class="text-xs text-red-500">{{$message}}</span>
-            @enderror
+
         </div>
 
         <div class="flex justify-end mt-1 border-t border-gray-200 pt-3">
-            <x-submit-button>Post</x-submit-button>
+            <x-form.button>Post</x-form.button>
         </div>
     </form>
 </x-panel>
