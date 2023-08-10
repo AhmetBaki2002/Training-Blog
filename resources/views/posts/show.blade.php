@@ -11,7 +11,7 @@
                         Published <time>{{$post->created_at->diffForHumans()}}</time>
                     </p>
 
-                    <div class="flex items-center lg:justify-center text-sm mt-4">
+                    <div class="flex items-center lg:justify-center text-sm mt-4 text-red-500">
                         <img src="/images/lary-avatar.svg" alt="Lary avatar">
                         <div class="ml-3 text-left">
                             <h5 class="font-bold"><a href="/?authors={{$post->author->username}}">{{$post->author->name}}</a></h5>
